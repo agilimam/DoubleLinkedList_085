@@ -115,6 +115,40 @@ void DoubleLinkedList::traverse() {
 	}
 }
 
+void DoubleLinkedList::revtraverse() {
+	if (ListEmpety()) {
+		cout << "\nList is Empety" << endl;
+	}
+
+	else {
+		cout << "\n Records in descending order of roll number are" << endl;
+		Node* currentNode = START;
+		while (currentNode->next != NULL)
+			currentNode = currentNode->next;
+
+		while (currentNode != NULL) {
+			cout << currentNode->noMhs << " " << currentNode->name << endl;
+			currentNode = currentNode->prev;
+		}
+	}
+}
+
+void DoubleLinkedList::hapus() {
+	if (ListEmpety()) {
+		cout << "\NList is empety" << endl;
+	}
+
+	cout << "\nEnter the roll Number of the student whose record is to be deleted: ";
+	int rollNo;
+	cin >> rollNo;
+	cout << endl;
+	if (DoubleLinkedList::deleteNode(rollNo) == false)
+		cout << "Reocrd not found" << endl;
+	else
+		cout << "Record with roll number" << rollNo << "Deleted" << endl;
+}
+
+
 
 
 
