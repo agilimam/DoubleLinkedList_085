@@ -170,7 +170,10 @@ int main() {
 	DoubleLinkedList obj;
 	while (true) {
 		try {
-
+			cout << "\nMenu" << endl;
+			cout << "1. Add a Record to the List" << endl;
+			cout << "2. Delete a record from the list" << endl;
+			cout << "3. View all record in the ascending order of roll number" << endl;
 		}
 	}
 }
