@@ -10,3 +10,8 @@ public:
 	Node* prev;
 };
 
+class DoubleLinkedList {
+private:
+	Node* START = NULL;
+public:
+};
