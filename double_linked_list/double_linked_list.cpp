@@ -24,4 +24,14 @@ public:
 	void searchData();
 };
 
+void DoubleLinkedList::addNode() {
+	int nim;
+	string nm;
+	cout << "\nEnter the roll number of the secret: ";
+	cin >> nm;
+	cout << "\nEnter the name of the student: ";
+	cin >> nm;
+
+}
+
 
